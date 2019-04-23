@@ -7,13 +7,6 @@ const loginModule = require("./login");
 const signupModule = require("./signup");
 
 let pool = mysql.createPool({
-    connectionLimit: 10,
-    host: 'localhost',
-    user: 'root',
-    password: 'sks9331509',
-    port: '3306',
-    database: 'gaebap',
-    debug: false
 });
 
 app.use(bodyParser.json());
