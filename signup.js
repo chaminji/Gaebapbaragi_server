@@ -1,13 +1,6 @@
 const mysql = require('mysql');
 
 let pool = mysql.createPool({
-    connectionLimit: 0,
-    host: 'localhost',
-    user: 'root',
-    password: 'sks9331509',
-    port: '3306',
-    database: 'gaebap',
-    debug: false
 });
 
 exports.SignUp = (id, password, callback) => {
